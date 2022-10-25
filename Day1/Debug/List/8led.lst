@@ -1,9 +1,9 @@
 
-AVRASM ver. 2.1.30  C:\Users\USER\Desktop\Micro Lab\Day1\Debug\List\8led.asm Fri Oct 21 17:08:58 2022
+AVRASM ver. 2.1.30  C:\Users\USER\Desktop\Micro Lab\Day1\Debug\List\8led.asm Wed Oct 26 00:15:20 2022
 
                  
                  
-                 ;CodeVisionAVR C Compiler V3.49a Evaluation
+                 ;CodeVisionAVR C Compiler V3.49a 
                  ;(C) Copyright 1998-2022 Pavel Haiduc, HP InfoTech S.R.L.
                  ;http://www.hpinfotech.ro
                  
@@ -1668,42 +1668,42 @@ AVRASM ver. 2.1.30  C:\Users\USER\Desktop\Micro Lab\Day1\Debug\List\8led.asm Fri
                  ; 0000 008E PORTC = 0b00000001;
 00006e e0e1      	LDI  R30,LOW(1)
 00006f d010      	RCALL SUBOPT_0x0
-                 ; 0000 008F delay_ms(100);
+                 ; 0000 008F delay_ms(1000);
                  ; 0000 0090 PORTC = 0b00000000;
                  ; 0000 0091 PORTC = 0b00000010;
 000070 e0e2      	LDI  R30,LOW(2)
 000071 d00e      	RCALL SUBOPT_0x0
-                 ; 0000 0092 delay_ms(100);
+                 ; 0000 0092 delay_ms(1000);
                  ; 0000 0093 PORTC = 0b00000000;
                  ; 0000 0094 PORTC = 0b00000100;
 000072 e0e4      	LDI  R30,LOW(4)
 000073 d00c      	RCALL SUBOPT_0x0
-                 ; 0000 0095 delay_ms(100);
+                 ; 0000 0095 delay_ms(1000);
                  ; 0000 0096 PORTC = 0b00000000;
                  ; 0000 0097 PORTC = 0b00001000;
 000074 e0e8      	LDI  R30,LOW(8)
 000075 d00a      	RCALL SUBOPT_0x0
-                 ; 0000 0098 delay_ms(100);
+                 ; 0000 0098 delay_ms(1000);
                  ; 0000 0099 PORTC = 0b00000000;
                  ; 0000 009A PORTC = 0b00010000;
 000076 e1e0      	LDI  R30,LOW(16)
 000077 d008      	RCALL SUBOPT_0x0
-                 ; 0000 009B delay_ms(100);
+                 ; 0000 009B delay_ms(1000);
                  ; 0000 009C PORTC = 0b00000000;
                  ; 0000 009D PORTC = 0b00100000;
 000078 e2e0      	LDI  R30,LOW(32)
 000079 d006      	RCALL SUBOPT_0x0
-                 ; 0000 009E delay_ms(100);
+                 ; 0000 009E delay_ms(1000);
                  ; 0000 009F PORTC = 0b00000000;
                  ; 0000 00A0 PORTC = 0b01000000;
 00007a e4e0      	LDI  R30,LOW(64)
 00007b d004      	RCALL SUBOPT_0x0
-                 ; 0000 00A1 delay_ms(100);
+                 ; 0000 00A1 delay_ms(1000);
                  ; 0000 00A2 PORTC = 0b00000000;
                  ; 0000 00A3 PORTC = 0b10000000;
 00007c e8e0      	LDI  R30,LOW(128)
 00007d d002      	RCALL SUBOPT_0x0
-                 ; 0000 00A4 delay_ms(100);
+                 ; 0000 00A4 delay_ms(1000);
                  ; 0000 00A5 PORTC = 0b00000000;
                  ; 0000 00A6 
                  ; 0000 00A7 
@@ -1718,8 +1718,8 @@ AVRASM ver. 2.1.30  C:\Users\USER\Desktop\Micro Lab\Day1\Debug\List\8led.asm Fri
                  ;OPTIMIZER ADDED SUBROUTINE, CALLED 8 TIMES, CODE SIZE REDUCTION:33 WORDS
                  SUBOPT_0x0:
 000080 bbe5      	OUT  0x15,R30
-000081 e6a4      	LDI  R26,LOW(100)
-000082 e0b0      	LDI  R27,0
+000081 eea8      	LDI  R26,LOW(1000)
+000082 e0b3      	LDI  R27,HIGH(1000)
 000083 d003      	RCALL _delay_ms
 000084 e0e0      	LDI  R30,LOW(0)
 000085 bbe5      	OUT  0x15,R30

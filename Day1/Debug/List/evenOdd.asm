@@ -1,5 +1,5 @@
 
-;CodeVisionAVR C Compiler V3.49a Evaluation
+;CodeVisionAVR C Compiler V3.49a 
 ;(C) Copyright 1998-2022 Pavel Haiduc, HP InfoTech S.R.L.
 ;http://www.hpinfotech.ro
 
@@ -1660,12 +1660,12 @@ _0x3:
 ; 0000 008A PORTC = 0b01010101;
 	LDI  R30,LOW(85)
 	RCALL SUBOPT_0x0
-; 0000 008B delay_ms(200);
+; 0000 008B delay_ms(2000);
 ; 0000 008C PORTC = 0b00000000;
 ; 0000 008D PORTC = 0b10101010;
 	LDI  R30,LOW(170)
 	RCALL SUBOPT_0x0
-; 0000 008E delay_ms(200);
+; 0000 008E delay_ms(2000);
 ; 0000 008F PORTC = 0b00000000;
 ; 0000 0090 
 ; 0000 0091 }
@@ -1679,8 +1679,8 @@ _0x6:
 ;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:3 WORDS
 SUBOPT_0x0:
 	OUT  0x15,R30
-	LDI  R26,LOW(200)
-	LDI  R27,0
+	LDI  R26,LOW(2000)
+	LDI  R27,HIGH(2000)
 	RCALL _delay_ms
 	LDI  R30,LOW(0)
 	OUT  0x15,R30

@@ -1,9 +1,9 @@
 
-AVRASM ver. 2.1.30  C:\Users\USER\Desktop\Micro Lab\Day1\Debug\List\evenOdd.asm Fri Oct 21 17:21:09 2022
+AVRASM ver. 2.1.30  C:\Users\USER\Desktop\Micro Lab\Day1\Debug\List\evenOdd.asm Wed Oct 26 00:21:14 2022
 
                  
                  
-                 ;CodeVisionAVR C Compiler V3.49a Evaluation
+                 ;CodeVisionAVR C Compiler V3.49a 
                  ;(C) Copyright 1998-2022 Pavel Haiduc, HP InfoTech S.R.L.
                  ;http://www.hpinfotech.ro
                  
@@ -1664,12 +1664,12 @@ AVRASM ver. 2.1.30  C:\Users\USER\Desktop\Micro Lab\Day1\Debug\List\evenOdd.asm 
                  ; 0000 008A PORTC = 0b01010101;
 00006e e5e5      	LDI  R30,LOW(85)
 00006f d004      	RCALL SUBOPT_0x0
-                 ; 0000 008B delay_ms(200);
+                 ; 0000 008B delay_ms(2000);
                  ; 0000 008C PORTC = 0b00000000;
                  ; 0000 008D PORTC = 0b10101010;
 000070 eaea      	LDI  R30,LOW(170)
 000071 d002      	RCALL SUBOPT_0x0
-                 ; 0000 008E delay_ms(200);
+                 ; 0000 008E delay_ms(2000);
                  ; 0000 008F PORTC = 0b00000000;
                  ; 0000 0090 
                  ; 0000 0091 }
@@ -1683,8 +1683,8 @@ AVRASM ver. 2.1.30  C:\Users\USER\Desktop\Micro Lab\Day1\Debug\List\evenOdd.asm 
                  ;OPTIMIZER ADDED SUBROUTINE, CALLED 2 TIMES, CODE SIZE REDUCTION:3 WORDS
                  SUBOPT_0x0:
 000074 bbe5      	OUT  0x15,R30
-000075 eca8      	LDI  R26,LOW(200)
-000076 e0b0      	LDI  R27,0
+000075 eda0      	LDI  R26,LOW(2000)
+000076 e0b7      	LDI  R27,HIGH(2000)
 000077 d003      	RCALL _delay_ms
 000078 e0e0      	LDI  R30,LOW(0)
 000079 bbe5      	OUT  0x15,R30

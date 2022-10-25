@@ -22,6 +22,7 @@ Data Stack size         : 512
 
 // I/O Registers definitions
 #include <mega32.h>
+#include <delay.h>
 
 // Declare your global variables here
 

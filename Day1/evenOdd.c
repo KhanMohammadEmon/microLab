@@ -136,10 +136,10 @@ TWCR=(0<<TWEA) | (0<<TWSTA) | (0<<TWSTO) | (0<<TWEN) | (0<<TWIE);
 while (1)
       {
         PORTC = 0b01010101;
-        delay_ms(200);
+        delay_ms(2000);
         PORTC = 0b00000000;
         PORTC = 0b10101010;
-        delay_ms(200);
+        delay_ms(2000);
         PORTC = 0b00000000;
 
       }
