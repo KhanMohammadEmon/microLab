@@ -406,10 +406,11 @@ Row=0
 Column=0
 ScrollPosX=0
 ScrollPosY=0
-TimeStamp=1431797283
+TimeStamp=1432206597
 [BookmarksFoldedCode]
-Files=1
+Files=2
 F1=C:\Users\USER\Desktop\Micro Lab\Day2\7seg.c
+F2=7seg.c
 [Bookmarks1]
 TimeStamp=1431796729
 Row=149
@@ -427,4 +428,22 @@ BK7=-1
 BK8=-1
 BK9=-1
 [FoldedCode1]
+Blocks=0
+[Bookmarks2]
+TimeStamp=1431796729
+Row=149
+Column=28
+ScrollPosX=0
+ScrollPosY=126
+BK0=-1
+BK1=-1
+BK2=-1
+BK3=-1
+BK4=-1
+BK5=-1
+BK6=-1
+BK7=-1
+BK8=-1
+BK9=-1
+[FoldedCode2]
 Blocks=0
