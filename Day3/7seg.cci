@@ -1,0 +1,7 @@
+VERSION:3 SOURCE_TIMESTAMP:5566B24A
+NODE:I LEVEL:0 LINE:24 "C:\cvavreval\inc\mega32.h"
+NODE:I LEVEL:0 LINE:25 "C:\cvavreval\inc\delay.h"
+NODE:I LEVEL:0 LINE:26 "C:\cvavreval\inc\stdio.h"
+NODE:V LEVEL:0 LINE:30 "arr -> RAM:????"
+NODE:V LEVEL:0 LINE:31 "i -> R4,R5"
+NODE:F LEVEL:0 LINE:32 "main(void)"
